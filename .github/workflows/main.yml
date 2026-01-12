@@ -6,12 +6,12 @@ on:
   pull_request:
 
 jobs:
-  sast: 
-  name: Semgrep SAST scan 
-  runs-on: ubuntu-latest 
+  sast:
+    name: Semgrep SAST Scan
+    runs-on: ubuntu-latest
 
-steps:
-      - name: Checkout Code
+    steps:
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Run Semgrep
